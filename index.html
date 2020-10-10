@@ -20,7 +20,8 @@
     <link href="assets/css/style2.css" rel="stylesheet" />
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <!-- ANIMATED FONT AWESOME -->
-    <link rel="stylesheet" href="font-awesome-animation.min.css">
+    <link rel="stylesheet" href="
+https://cdnjs.cloudflare.com/ajax/libs/font-awesome-animation/0.3.0/font-awesome-animation.min.css">
     <!-- HTML5 Shiv and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -31,7 +32,7 @@
 </head>
 <body data-spy="scroll" data-target=".navbar-fixed-top">
 
-    <div class="navbar navbar-default navbar-fixed-top scroll-me">
+    <div class="navbar navbar-default navbar-fixed-top">
         <!-- pass scroll-me class above a tags to starts scrolling -->
         <div class="container">
             <div class="navbar-header">
@@ -390,40 +391,6 @@
     </footer>
     <a href="#" class="scrollup"><i class="fa fa-angle-up fa-2x"></i></a>
 
-    
-
-
-
-    <!--FOOTER SECTION END  -->
-    <!-- JAVASCRIPT FILES PLACED AT THE BOTTOM TO REDUCE THE LOADING TIME  -->
-    <!-- CORE JQUERY  SCRIPTS -->
-
-<script src="https://www.paypal.com/sdk/js?client-id=sb&currency=USD" data-sdk-integration-source="button-factory"></script>
-<script>
-  paypal.Buttons({
-      style: {
-          shape: 'pill',
-          color: 'blue',
-          layout: 'vertical',
-          label: 'paypal',
-          
-      },
-      createOrder: function(data, actions) {
-          return actions.order.create({
-              purchase_units: [{
-                  amount: {
-                      value: '1'
-                  }
-              }]
-          });
-      },
-      onApprove: function(data, actions) {
-          return actions.order.capture().then(function(details) {
-              alert('Transaction completed by ' + details.payer.name.given_name + '!');
-          });
-      }
-  }).render('#paypal-button-container');
-</script>
     <script src="assets/js/jquery-1.11.1.js"></script>
     <!-- BOOTSTRAP SCRIPTS  -->
     <script src="assets/js/bootstrap.js"></script>
